@@ -1,4 +1,4 @@
 # dat250-assignments
 A repository containing handins in the course DAT250
 
-weekly assignments can be found [here](/assignments)
+Weekly assignment 1 can be found [here](/assignments/expass1.md)
