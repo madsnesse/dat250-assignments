@@ -1,11 +1,11 @@
-#DAT250: Software Technology Experiment Assignment 1
-##Installation
+# DAT250: Software Technology Experiment Assignment 1
+## Installation
 For the installation I already had a working environment for java development set up, using Intellij as an IDE. 
 Verified that it is set up correctly by running ```mvn --version``` as that not only shows me that maven is installed, 
 but also which java version is being used by maven. For git I usually only use either terminal or IntelliJs built-in git 
 features, but I also have sourcetree, and GitHub desktop installed if I need a more graphical tool 
 
-##Heroku Tutorial
+## Heroku Tutorial
 I went through all the steps in the tutorial. 
 
 One of the issues I encountered was that I didn't have postgres installed locally,
