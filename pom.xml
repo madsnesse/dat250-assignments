@@ -1,0 +1,11 @@
+<project>
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>dat250.assignments</groupId>
+    <artifactId>dat250.assignments</artifactId>
+    <packaging>pom</packaging>
+    <version>1</version>
+    <modules>
+        <module>assignment3</module>
+    </modules>
+</project>
