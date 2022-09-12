@@ -16,7 +16,7 @@ public class Person {
     private Long id;
     private String name;
 
-    @ManyToMany
+    @ManyToMany(mappedBy = "owners")
     private Collection<Address> addresses = new ArrayList<>();
 
     @OneToMany

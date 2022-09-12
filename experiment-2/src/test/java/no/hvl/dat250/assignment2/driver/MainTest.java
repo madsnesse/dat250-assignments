@@ -9,6 +9,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
+import java.util.List;
 import java.util.Optional;
 import java.util.Set;
 
@@ -46,7 +47,7 @@ public class MainTest {
 
         assertThat(address.getStreet(), is("Inndalsveien"));
         assertThat(address.getNumber(), is(28));
-        assertThat(address.getOwners(), is(Set.of(person)));
+        assertThat(address.getOwners(), is(List.of(person)));
 
         // Test credit cards
         assertThat(person.getCreditCards().size(), is(2));

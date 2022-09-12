@@ -17,7 +17,7 @@ public class Bank {
 
     private String name;
 
-    @OneToMany
+    @OneToMany(mappedBy = "owningBank")
     private Set<CreditCard> ownedCards = new HashSet<>();
 
 }

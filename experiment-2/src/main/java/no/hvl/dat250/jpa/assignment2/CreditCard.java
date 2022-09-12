@@ -18,6 +18,7 @@ public class CreditCard {
     private Integer limit;
 
     @ManyToOne
+    @JoinColumn(name = "owningbank_id")
     private Bank owningBank;
     @OneToOne
     private Pincode pincode;

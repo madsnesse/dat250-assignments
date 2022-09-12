@@ -18,8 +18,11 @@ public class Address {
     private String street;
     private Integer number;
 
-
     @ManyToMany
+    @JoinTable(
+            name = "person_address",
+            joinColumns = @JoinColumn(name = "address_id"),
+            inverseJoinColumns = @JoinColumn(name = "owner_id"))
     private Collection<Person> owners = new ArrayList<>();
 
 }
