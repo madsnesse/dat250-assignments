@@ -1,7 +1,7 @@
 name: Build project
 on: [push]
 jobs:
-  build-maven-project:
+  package-and-test:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository code
