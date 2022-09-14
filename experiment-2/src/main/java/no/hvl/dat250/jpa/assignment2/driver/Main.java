@@ -45,7 +45,7 @@ public class Main {
 
         Bank bank = new Bank();
         bank.setName("Pengebank");
-
+        bank.setOwnedCards(Set.of(cc1, cc2));
         person.setAddresses(List.of(address));
         address.setOwners(Set.of(person));
         person.setCreditCards(List.of(cc1, cc2));

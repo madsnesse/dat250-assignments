@@ -18,7 +18,7 @@ public class CreditCard {
     private Integer limit;
 
     @ManyToOne
-    @JoinColumn(name = "owningbank_id")
+    @JoinColumn(name = "bank_id")
     private Bank owningBank;
 
     @ManyToOne
