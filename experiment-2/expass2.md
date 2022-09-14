@@ -16,7 +16,11 @@ The code to my project exists in the module that this file is located in i.e. [e
 ##Database
 For database inspection I used the database plugin that comes preinstalled to Intellij, and the tables that was created 
 was the ones seen here:
+
 ![img.png](images/tables.png)
+
 I was also able to open up all the tables and see that the correct data was entered providing a view like this:
+
 ![img.png](images/table_contents.png)
+
 which was really useful
