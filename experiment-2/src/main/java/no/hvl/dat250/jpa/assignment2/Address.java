@@ -21,10 +21,7 @@ public class Address {
     private Integer number;
 
     @ManyToMany
-    @JoinTable(
-            name = "person_address",
-            joinColumns = @JoinColumn(name = "address_id"),
-            inverseJoinColumns = @JoinColumn(name = "owner_id"))
+    @JoinColumn(name = "owner_id")
     private Set<Person> owners = new HashSet<>();
 
 }
