@@ -19,7 +19,7 @@ public class Person {
     @ManyToMany(mappedBy = "owners")
     private Collection<Address> addresses = new ArrayList<>();
 
-    @OneToMany
+    @OneToMany(mappedBy = "owner")
     private Collection<CreditCard> creditCards = new ArrayList<>();
 
 }

@@ -2,3 +2,4 @@
 *.iml
 /target/
 /db/
+/experiment-2/db/

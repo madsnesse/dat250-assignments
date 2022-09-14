@@ -20,6 +20,11 @@ public class CreditCard {
     @ManyToOne
     @JoinColumn(name = "owningbank_id")
     private Bank owningBank;
+
+    @ManyToOne
+    @JoinColumn(name = "person_id")
+    private Person owner;
+
     @OneToOne
     private Pincode pincode;
 

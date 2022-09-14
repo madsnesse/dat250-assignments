@@ -33,12 +33,14 @@ public class Main {
         cc1.setBalance(-5000);
         cc1.setLimit(-10000);
         cc1.setPincode(pincode);
+        cc1.setOwner(person);
 
         CreditCard cc2 = new CreditCard();
         cc2.setNumber(123);
         cc2.setBalance(1);
         cc2.setLimit(2000);
         cc2.setPincode(pincode);
+        cc2.setOwner(person);
 
         Bank bank = new Bank();
         bank.setName("Pengebank");
