@@ -10,5 +10,5 @@ jobs:
       - run: echo "🖥️ The workflow is now ready to test your code on the runner."
       - name: Run maven clean install
         run: |
-          mvn clean install
+          mvn -B clean install
       - run: echo "🍏 This job's status is ${{ job.status }}."

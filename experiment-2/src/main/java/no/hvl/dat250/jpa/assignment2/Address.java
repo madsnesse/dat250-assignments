@@ -6,6 +6,8 @@ import lombok.Setter;
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.HashSet;
+import java.util.Set;
 
 @Getter
 @Setter
@@ -23,6 +25,6 @@ public class Address {
             name = "person_address",
             joinColumns = @JoinColumn(name = "address_id"),
             inverseJoinColumns = @JoinColumn(name = "owner_id"))
-    private Collection<Person> owners = new ArrayList<>();
+    private Set<Person> owners = new HashSet<>();
 
 }

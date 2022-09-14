@@ -47,7 +47,7 @@ public class MainTest {
 
         assertThat(address.getStreet(), is("Inndalsveien"));
         assertThat(address.getNumber(), is(28));
-        assertThat(address.getOwners(), is(List.of(person)));
+        assertThat(address.getOwners(), is(Set.of(person)));
 
         // Test credit cards
         assertThat(person.getCreditCards().size(), is(2));

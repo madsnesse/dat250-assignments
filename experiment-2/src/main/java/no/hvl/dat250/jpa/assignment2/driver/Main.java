@@ -9,6 +9,7 @@ import javax.persistence.EntityTransaction;
 import javax.persistence.Persistence;
 import java.util.Collections;
 import java.util.List;
+import java.util.Set;
 
 public class Main {
     public static final String PERSISTENCE_UNIT_NAME = "experiment2";
@@ -46,7 +47,7 @@ public class Main {
         bank.setName("Pengebank");
 
         person.setAddresses(List.of(address));
-        address.setOwners(List.of(person));
+        address.setOwners(Set.of(person));
         person.setCreditCards(List.of(cc1, cc2));
         cc1.setOwningBank(bank);
         cc2.setOwningBank(bank);
