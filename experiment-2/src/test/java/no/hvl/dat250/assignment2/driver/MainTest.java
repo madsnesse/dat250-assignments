@@ -9,8 +9,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
-import java.util.List;
-import java.util.Optional;
+ import java.util.Optional;
 import java.util.Set;
 
 import static org.hamcrest.CoreMatchers.is;
@@ -83,8 +82,8 @@ public class MainTest {
         if (optionalCard.isEmpty()) {
             throw new RuntimeException(
                     String.format("Card with number %s was not found for the person %s!",
-                            cardNumber,
-                            person.getName()));
+                                  cardNumber,
+                                  person.getName()));
         }
         return optionalCard.get();
     }
