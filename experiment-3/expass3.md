@@ -3,21 +3,16 @@
 ## Tutorial:
 
 #### Step 1:
-
-<img src="images/switch_database.png" width="200" alt="switch database"/>
+![](images/switch_database.png)
 
 #### Step 2:
-
-<img src="images/populate_database.png" width="200" alt="populate_database"/>
+![](images/populate_database.png)
 
 #### Step 3:
-
-<img src="images/find_all.png" width="200" alt="find_all"/>
+![](images/find_all.png)
 
 #### Step 4:
-
-<img src="images/find_where.png" width="200" alt="find where"/>
+![](images/find_where.png)
 
 #### Step 5:
-
-<img src="images/find_fields.png" width="200" alt="find fields"/>
+![](images/find_fields.png)
