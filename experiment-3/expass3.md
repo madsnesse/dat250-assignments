@@ -602,9 +602,10 @@ var reduceFunction1 = function (keyCustId, valuesPrices) {
     return Array.sum(valuesPrices)/valuesPrices.length; 
 };
 ````
-This is useful to obtain because it can be used to see how much each customer has spent on average
 <details>
 <summary>custom function</summary>
 <img src="images/custom_map_reduce.png" alt="">
 </details>
+The result obtained is the name of each customer as well as how much they have spent on average on each order.
+This can be used by store managers to learn more about the behaviour of customers
 
