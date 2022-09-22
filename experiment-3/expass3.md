@@ -1,4 +1,8 @@
 # DAT250: Software Technology Experiment Assignment 3
+
+I have probably included too many images, but I had already spent some time inserting them when I read that I didnt need 
+that many, hopefully I have given the 'collapses' good enough names that they are easy to understand
+
 # Table of Contents
 1. [Getting started](#getting-started-examples)
 2. [Insert documents](#insert-documents)
@@ -6,13 +10,15 @@
 4. [Update documents](#update-documents)
 5. [Bulk write](#bulk-write)
 6. [Console output](#output)
+## Installation
+verifying checksum:
+![img_1.png](images/verify_checksum.png)
 
 ## Getting started examples:
 
-
 #### Step 1:
 
-<details><summary>switch datase</summary>
+<details><summary>switch database</summary>
 <img src="images/switch_database.png" alt="">
 </details>
 
@@ -91,7 +97,6 @@ skipped parts of this since it was basically identical to previous one, but trie
 console output
 </summary>
 
-    ```bash 
     test> db.inventory.insertOne()
     test> db.inventory.insertOne({item: "canvas", qty: 100, tags: ["cotton"], size:{h:28, w:35.5, uom: "cm"}})
     {
@@ -581,6 +586,25 @@ console output
       upsertedCount: 0,
       upsertedIds: {}
     }
-    test>```
+    test>
 
 </details>
+
+## Aggregation
+<details>
+<summary>map and reduce</summary>
+<img src="images/map_reduce.png" alt="">
+</details>
+
+I wrote a custom reduce function which instead of the sum of the prices for each customer id, takes the average
+````javascript
+var reduceFunction1 = function (keyCustId, valuesPrices) { 
+    return Array.sum(valuesPrices)/valuesPrices.length; 
+};
+````
+This is useful to obtain because it can be used to see how much each customer has spent on average
+<details>
+<summary>custom function</summary>
+<img src="images/custom_map_reduce.png" alt="">
+</details>
+
