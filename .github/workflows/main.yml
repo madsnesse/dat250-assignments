@@ -11,7 +11,7 @@ jobs:
           mvn package -DskipTests -ntp
       - name: maven test
         run: |
-          mvn test
+          mvn test --batch-mode
       - name: Report
         uses: dorny/test-reporter@v1
         if: always()
