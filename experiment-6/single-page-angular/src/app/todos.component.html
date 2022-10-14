@@ -1,0 +1,18 @@
+<table>
+    <th>Id</th>    
+    <th>Description</th>
+    <th>Summary</th>
+
+    <tr *ngFor="let todo of todos">
+        <td>{{todo.id}}</td>
+        <td>{{todo.description}}</td>
+        <td>{{todo.summary}}</td>
+        <td><button (click)="deleteTodo(todo.id)" clickable>DELETE</button></td>
+    </tr>
+</table>
+<button (click)="updateTodos()" clickable>Refresh</button>
+<form [formGroup] = "newTodo" (ngSubmit) = addTodo()>
+    <input formControlName="description">
+    <input formControlName="summary">
+    <button type="submit">Add</button>
+</form>
