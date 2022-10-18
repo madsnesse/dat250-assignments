@@ -12,3 +12,5 @@ Weekly assignment 4 can be found [here](/experiment-4/expass4.md)
 Weekly assignment 5 can be found [here](/experiment-5/expass5.md)
 
 Weekly assignment 6 can be found [here](/experiment-6/expass6.md)
+
+Weekly assignment 7 can be found [here](/experiment-7/expass7.md)
